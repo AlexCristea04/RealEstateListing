@@ -1,0 +1,26 @@
+﻿@model PropertyDetailsViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Details</title>
+</head>
+<body>
+<h1>Property Details</h1>
+
+<div>
+    <h2>Property Information</h2>
+    <p><strong>Address:</strong> @Model.PropertyAddress</p>
+    <p><strong>Description:</strong> @Model.PropertyDescription</p>
+    <p><strong>Price:</strong> @Model.PropertyPrice.ToString("C")</p>
+</div>
+
+<div>
+    <h2>Agent Information</h2>
+    <p><strong>Name:</strong> @Model.AgentName</p>
+    <p><strong>Contact:</strong> @Model.AgentContact</p>
+</div>
+</body>
+</html>
